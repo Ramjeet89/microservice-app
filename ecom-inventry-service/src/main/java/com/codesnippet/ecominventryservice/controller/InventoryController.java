@@ -9,6 +9,6 @@ public class InventoryController {
     @GetMapping("/{productId}")
     public String checkInventory(@PathVariable String productId) {
         System.out.println("Checking Inventory for Product ID: " + productId);
-        return productId.equals("1") ? "IN STOCK0" : " OUT OF STOCK";
+        return productId.equals("1") ? "IN STOCK" : " OUT OF STOCK";
     }
 }
