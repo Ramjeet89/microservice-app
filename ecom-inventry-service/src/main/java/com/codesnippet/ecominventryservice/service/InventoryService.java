@@ -32,5 +32,4 @@ public class InventoryService {
         inventoryRepository.deleteById(productId);
         return "Product Deleted";
     }
-
 }
